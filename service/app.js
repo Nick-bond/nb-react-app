@@ -5,7 +5,9 @@ const constants = require('./constants');
 const cors = require('cors');
 const path = require('path');
 
-const { PORT, MONGO_URI } = constants;
+const PORT = process.env.PORT || 3000;
+
+const { MONGO_URI } = constants;
 
 app.use(cors());
 app.use(express.json({extended: true}));
