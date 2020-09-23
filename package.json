@@ -1,0 +1,48 @@
+{
+  "name": "frontend-react-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node service/app.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "precommit": "lint-staged",
+    "server": "nodemon service/app.js",
+    "heroku-prebuild": "npm install",
+    "heroku-postbuild": "npm run build",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-react-app": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.5",
+    "nodemon": "^2.0.4",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

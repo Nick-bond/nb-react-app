@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  z-index: 2;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  height: var(--header-height);
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-inner {
+  width: 1200px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header-inner {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
