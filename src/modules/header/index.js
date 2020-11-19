@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../hellofresh-logo.svg';
+import logo from '../../logo.png';
 
 function Index() {
   return (
     <header className="header">
       <div className="header-inner">
         <Link to="/">
-          <img className="logo" src={logo} alt="hellofresh logo" />
+          <img className="logo" src={logo} alt="logo" />
         </Link>
       </div>
     </header>
