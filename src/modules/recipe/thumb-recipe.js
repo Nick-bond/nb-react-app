@@ -4,7 +4,7 @@ import convertTime from '../../helpers/convert-time';
 import { Link } from 'react-router-dom';
 import Rating from '../rating';
 
-function ThumbRecipe({ recipe }) {
+function ThumbRecipe({ recipe, removeDialog, addDialog }) {
   const { thumb, headline, name, calories, time, id, rating } = recipe;
 
   return (
@@ -20,6 +20,7 @@ function ThumbRecipe({ recipe }) {
           <span>{calories}</span>
           <span>{convertTime(time)}</span>
         </div>
+        <div className="btn" onClick={removeDialog}></div>
       </div>
     </Link>
   );
@@ -28,6 +29,7 @@ function ThumbRecipe({ recipe }) {
 ThumbRecipe.propTypes = {
   recipe: PropTypes.shape().isRequired,
   ratings: PropTypes.shape().isRequired,
+  removeDialog: PropTypes.func.isRequired,
 };
 
 export default ThumbRecipe;
