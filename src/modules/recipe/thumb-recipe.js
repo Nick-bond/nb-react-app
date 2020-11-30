@@ -29,6 +29,7 @@ function ThumbRecipe({ recipe, removeDialog, addDialog }) {
 ThumbRecipe.propTypes = {
   recipe: PropTypes.shape().isRequired,
   ratings: PropTypes.shape().isRequired,
+  removeDialog: PropTypes.func.isRequired,
 };
 
 export default ThumbRecipe;
