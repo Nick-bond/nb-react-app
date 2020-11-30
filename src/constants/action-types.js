@@ -1,0 +1,4 @@
+export default {
+  SHOW_DIALOGS: 'SHOW_DIALOGS',
+  HIDE_DIALOG: 'HIDE_DIALOG',
+};
