@@ -46,12 +46,10 @@ function DialogDeletePost({ closeDialog, remove }) {
 
 DialogDeletePost.propTypes = {
   closeDialog: PropTypes.func,
-  remove: PropTypes.func,
 };
 
 DialogDeletePost.defaultTypes = {
   closeDialog: () => {},
-  remove: () => {},
 };
 
 export default DialogDeletePost;

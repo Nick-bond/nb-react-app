@@ -8,8 +8,8 @@ const MainContext = React.createContext();
 
 function MainProvider({ children }) {
   const { loading, request } = useHttp();
-  const [itemList, setItemList] = useState([]);
-  const [ratings, setRatings] = useState([]);
+  // const [itemList, setItemList] = useState([]);
+  // const [ratings, setRatings] = useState([]);
 
   const getPosts = async () => {
     try {
